@@ -1,0 +1,7 @@
+.csslintrc
+.eslintrc
+node_modules
+package.json
+tests/phpunit.xml*
+tests/bootstrap.php*
+tests/codesniffer.ruleset.xml

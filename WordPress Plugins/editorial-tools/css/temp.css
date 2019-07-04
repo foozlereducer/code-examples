@@ -1,0 +1,15 @@
+/*
+table.container, table.container  td {
+	 border: 1px dotted #ccc;
+}
+*/
+table.lists, table.lists  td {
+
+}
+
+
+a.toggler {
+	padding: 5px 0;
+	display: inline-block;
+}
+

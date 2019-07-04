@@ -1,0 +1,108 @@
+.options_page {
+	font-size: 1.4em;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+
+#wpfooter {
+	position: relative !important;
+}
+.form-table {
+	position: relative;
+	clear: both;
+}
+
+div.clear-it {
+	clear: both;
+}
+.es-field-descriptions {
+	font-size: 0.9em;
+}
+
+input, select, input[type=password] {
+	line-height: 20px;
+	border: 1px solid #25567B;
+	-moz-box-shadow:    -3px 3px 2px 2px #ccc;
+  	-webkit-box-shadow: -3px 3px 2px 2px #ccc;
+  	box-shadow:         -3px 3px 2px 2px #ccc;
+	
+}
+
+input#submit {
+	width: 100%;
+}
+input {
+	width: 20%;
+}
+
+select {
+	width: 10%;
+}
+
+input#host, input#verify-indexes{
+	width: 70%;
+}
+
+input#username {
+	width: 20%;
+}
+
+input#password {
+	width: 22%;
+}
+
+.error {
+	width: auto;
+	background-color: yellow;
+	color: red;
+	font-weight: bold;
+}
+
+.object-index-status {
+	display: relative;
+	margin: 20px;
+	
+}
+
+div.option_wrapper {
+	float: left;
+}
+
+div.status {
+	float: left;
+	display: block;
+	margin: 20px;
+	clear: both;
+}
+
+span {  
+	float: left;
+}
+
+div.submit_wrapper {
+	clear: both;
+	float: left;
+}
+
+.circle {
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px; 
+	/* width and height can be anything, as long as they're equal */
+}
+
+.failure {
+	float: left;
+	width: 10px;
+	height: 10px;
+	background-color: #ff0000; /* red */
+}
+
+.success {
+	width: 10px;
+	height: 10px;
+	background-color: #00cc00; /* compimentary green */
+}
+

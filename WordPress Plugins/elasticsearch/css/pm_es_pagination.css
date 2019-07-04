@@ -1,0 +1,18 @@
+.default-text {
+	width: 200px;
+}
+
+.default-text-active {
+	color: #444;
+	font-style: italic;
+}
+
+a.search_these_terms_instead {
+	text-decoration:underline;
+	font-weight: bold;
+	color: #1240AB;
+}
+
+.default-cursor {
+	cursor: default;
+}

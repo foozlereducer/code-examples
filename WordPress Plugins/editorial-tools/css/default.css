@@ -1,0 +1,597 @@
+/*
+	CSS v2a
+
+	http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*     */
+
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
+  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
+  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Medium.eot");
+  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot");
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #000;
+	background-color: #ccc;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+	color: #2196F3;
+}
+
+body {
+		overflow-x:hidden;
+}
+
+#app {
+	width: 100%;
+	min-width: 600px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #bbb;
+}
+
+#page {
+	color: #222;
+	padding: 2em 2em;
+}
+
+ol.breadcrumb {
+	overflow: hidden;
+}
+
+															ol.breadcrumb li {
+																float: left;
+																margin-left: 5px;
+															}
+
+															ol.breadcrumb li:first-child {
+																margin-left: 0;
+															}
+
+															ol.breadcrumb li:after {
+																	content:'\3E';
+																	margin-left: 3px;
+															}
+
+															ol.breadcrumb li.current:after {
+																	content: none;
+															}
+
+h1 {
+		margin: 2em 0 1em 0;
+		font-size: 150%;
+}
+
+h2 {
+		margin: 1em 0 1em 0;
+		font-size: 150%;
+}
+
+
+
+/* TABLES */
+
+table.container {
+		width: 100%;
+}
+
+table.container  td {
+		padding: 5px;
+		text-align: left;
+		box-sizing:border-box;
+}
+
+table.container  tr td:first-child {
+		padding-left: 0;
+}
+
+table.container  td.col1 {
+	width: 25%;
+}
+
+table.container  td.col2 {
+	width: 25%;
+}
+
+table.container  td.col2and3 {
+	width: 50%;
+}
+
+table.container  td.col3 {
+	width: 25%;
+}
+
+table.container  td.col4 {
+	width: 22%;
+}
+
+table.container  td.col3and4 {
+	width: 42%;
+}
+
+table.container  td.col5 {
+	width: 8%;
+	text-align: right;
+}
+
+table.container td.r,
+table.lists td.r,
+table.results td.r,
+td.r { text-align: right; }
+
+tr.spacer td {
+	padding: 1em 0;
+}
+
+tr.generatedRow td {
+		padding-top: 40px;
+}
+
+tr.generatedRow td:first-child {
+		position: relative;
+}
+
+tr.generatedRow td:first-child label.filter {
+		position: absolute;
+		top: 10px;
+}
+
+label {
+		margin: .75em 0;
+		display: inline-block;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* LISTSHEADER TABLE */
+table.listsHeader {
+		width: 100%;
+		margin-top: 1em;
+}
+
+/* LISTS TABLE */
+table.lists {
+		width: 100%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+}
+
+table.lists  td {
+		padding: 5px;
+		text-align: left;
+		box-sizing:border-box;
+		line-height: 1.7;
+}
+
+table.lists  tr td:first-child {
+
+}
+
+table.lists td.col1, table.lists td.col2, table.lists td.col3,
+table.lists td.col4  {
+		font-weight: bold;
+		background-color: #fff;
+}
+
+table.lists td.col1 { width: 7%; }
+table.lists td.col2 { width: 18%; }
+table.lists td.col3 { width: 37%; }
+table.lists td.col4 { width: 20%; }
+table.lists td.col5 { width: 18%; }
+
+table.lists tr.odd td { background-color: #eee;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+/* BUTTONS */
+
+.red { background-color: #F44336 !important; }
+
+.blue { background-color: #2196F3 !important; }
+
+.shadow { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); }
+
+.btn {
+	  border: none;
+    border-radius: 2px;
+    display: inline-block;
+    padding: .5em 1em;
+		color: #fff;
+		font-weight: bold;
+		line-height: 2;
+		margin: 0 0 0 .3em;
+		cursor: pointer;
+		background-color: #aaa;
+}
+
+/*ROB added */
+.btn.small {
+    padding: .3em .5em
+}
+/*END ROB added */
+
+/* TEXT BOX */
+
+input {
+  background: none;
+  border: solid 2px #ccc;
+  color: #000;
+  padding: 10px;
+  font-size: 100%;
+  display: inline-block;
+	width: 100%;
+	box-sizing:border-box;
+}
+input:focus {
+  outline: none;
+	border: solid 2px #21a1e1;
+}
+
+input.wide {
+	width: 100%;
+	box-sizing:border-box;
+}
+
+
+/* RADIO BUTTONS */
+
+label.radioButton {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label.radioButton:before {
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #aaa;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+	border-radius: 8px;
+}
+
+input[type=radio]:checked + label.radioButton:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+/* DROP DOWNS */
+
+select {
+  border: solid 2px #ccc;
+  color: #000;
+  padding: 10px;
+  font-size: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+/* TAGS */
+
+ul.tags {
+	float: left;
+}
+
+ul.tags li {
+	float: left;
+	background-color: #ddd;
+	color: #666;
+	margin: 6px 6px 0 0;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+ul.tags li:after {
+		content:'\0078';
+		color: #000;
+		margin: 2px 0 0 6px;
+		position: relative;
+		top: -1px;
+		cursor: pointer;
+}
+
+/* RESULTS TABLE */
+
+table.results {
+		width: 100%;
+		/* border: 1px dotted #ccc; */
+}
+
+table.results th, table.results td {
+		padding: 5px 5px 5px 0;
+		/* border: 1px dotted #ccc; */
+		text-align: left;
+		box-sizing:border-box
+}
+
+table.results th {
+		font-weight: bold;
+}
+
+table.results th.num { width: 5%; }
+table.results th.title { width: 37%; }
+table.results th.source { width: 13%; }
+table.results th.status { width: 10%; }
+table.results th.published { width: 10%; }
+table.results th.icons { width: 25%; }
+
+div#app.createSearch table.results th.title { width: 70%; }
+div#app.createSearch table.results th.source { width: 25%; }
+div#app.createSearch table.results th.icons { display: none; }
+
+/* table.results td { border: 1px dotted #ccc; }
+		div#app.pointers table.results { border: 1px dotted Red; }
+		div#app.createSearch table.results { border: 1px dotted Green; }
+*/
+
+/* panels for hiding and showing */
+
+.alreadySavedPanel {
+	display: none;
+}
+.savePanel {
+	display: none;
+}
+
+.runPanel {
+	display: none;
+}
+
+.resultsPanel {
+	display: none;
+}
+
+
+#msg {
+		color: #ff9494;
+		font-weight: bold;
+}
+
+#msg p {
+		padding: 1em 0;
+}
+
+.fa-icon {
+    padding: 7px 6px 5px 7px;
+		min-width: 30px;
+		min-height: 30px;
+}
+
+/* APR 04 update */
+body {
+		position: relative;
+		height: 100%;
+		width: 100%;
+}
+
+#headsUpDisplay {
+	padding: 2em;
+	background-color: Blue;
+	color: #fff;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	vertical-align: middle;
+	display: none;
+}
+
+.fast-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+
+#headsUpDisplay .fast-spin {
+
+}
+
+#modalWindowHolder {
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEdJREFUeNrszzERACAMALEH5ZWOC4Ze4iCnmha4LSEiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyxxNgAHK7AOT5mXDAAAAAAElFTkSuQmCC');
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10000;
+}
+
+#modalWindow {
+	background-color: #fff;
+    top: 50%;
+    left: 50%;
+	 position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+		width: 66%;
+		min-height: 25%;
+		max-height: 80%;
+		box-shadow: 2px 6px 22px 3px rgba(0,0,0,0.75);
+		color: #333;
+		padding: 1em;
+		overflow-y: auto;
+}
+
+#modalWindowContent {
+		color: #333;
+		padding: 1em 1em 1em 1em;
+		text-align: left;
+		line-height: 1.5;
+}
+
+#modalWindowContent p {
+	margin-bottom: 1em;
+	clear: both;
+	overflow: hidden;
+}
+
+div.col100 {
+	width: 100%;
+	margin: 1em 0;
+	overflow: hidden;
+}
+
+div.col33 {
+	width: 33.3%;
+	float: left;
+}
+
+div.col66 {
+	width: 66.6%;
+	float: left;
+}
+
+div.col66 select {
+    border: solid 2px #ccc;
+    color: #000;
+    padding: 10px;
+    font-size: 100%;
+    width: 49%;
+    margin: 0 1% 0 0;
+}
+
+#listInfo {
+	clear: both;
+	margin-top: 2em;
+
+}
+
+/****************/
+/** Media Queries
+/****************/
+
+/* Safari Windows */
+/* Although this class is dropped on non-safari browser in Mac the media query
+targets only Safari Windows; otherwise the #modalWindow default css is rendered */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+    _:-webkit-full-screen, .safari_only {
+
+         -webkit-transform: translate(-50%, 10%) !important;
+		transform: translate (-50%, 10%) !important;
+
+    }
+}}
+
+/* Mac ios for Safari */
+.safari_mac {
+	-webkit-transform: translate(-50%, 10%) !important;
+	transform: translate (-50%, 10%) !important;
+}
